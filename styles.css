@@ -37,12 +37,14 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
-.headshot-placeholder {
+.headshot {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    object-fit: cover;
     background-color: var(--headshot-bg);
     margin: 0 auto 20px;
+    display: block;
 }
 
 .hero h1 {
@@ -54,7 +56,8 @@ body {
     font-size: 1.25rem;
     font-weight: 400;
     margin: 0 0 20px 0;
-    color: var(--accent-color);
+    color: var(--text-color);
+    opacity: 0.8;
 }
 
 .social-links a {
