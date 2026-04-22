@@ -1,0 +1,121 @@
+:root {
+    --bg-color: #f9f9fb;
+    --text-color: #2c2f33;
+    --accent-color: #2563eb;
+    --border-color: #e2e8f0;
+    --headshot-bg: #cbd5e1;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #111827;
+        --text-color: #f3f4f6;
+        --accent-color: #60a5fa;
+        --border-color: #374151;
+        --headshot-bg: #4b5563;
+    }
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.headshot-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--headshot-bg);
+    margin: 0 auto 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+}
+
+.hero h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    color: var(--accent-color);
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--accent-color);
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+main section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.privacy-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.privacy-links li {
+    margin-bottom: 0;
+}
